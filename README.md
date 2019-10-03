@@ -1,2 +1,2 @@
 # objektno_orijentirano_programiranje
-Objektno orijentirano programiranje - Vježbe i perdavanja
+Objektno orijentirano programiranje - Vježbe i predavanja
