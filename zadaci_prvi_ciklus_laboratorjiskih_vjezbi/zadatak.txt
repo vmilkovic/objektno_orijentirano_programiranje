@@ -1,0 +1,30 @@
+Zadatak: Zadatak je za sve studente isti i nosi ukupno 5% od ukupno 20% koliko je moguće
+ostvariti za lab. vježbe. Točnu klasu koju morate definirati i implementirati (.hpp i .cpp) se nalazi
+u tekstu ispod. Varijantu zadatka određujete prema formuli: (JMBAG % 10) + 1. Svaka klasa
+mora sadržavati:
+
+Barem tri podatkovna članova:
+– jedan mora biti dinamički alociran - pokazivač
+– jedan mora biti vlastito definirana struktura
+
+Getere i setere za sve podatkovne članove.
+Defaultni konstruktor koji postavlja podatkovne članove na početne vrijednosti.
+Barem jedan dodatni konstruktor koji će sadržavati pretpostavljene vrijednosti argumenata.
+Korištenje gettera i settera u konstruktorima.
+Destruktor koji se brine o uništavanju dinamički alociranih podatkovnih članova.
+Copy konstruktor.
+Barem dva operatora.
+Barem dvije metode koje koriste podatkovne članove. Sve metode u klasi koje možete
+definirajte kao konstantne.
+Metodu koja prikazuje vrijednosti svih podatkovnih članova.
+
+Zadatak 1.: Izradite klasu Automobil prema gorenavedenim naputcima.
+Zadatak 2.: Izradite klasu Blagajna prema gorenavedenim naputcima.
+Zadatak 3.: Izradite klasu Osoba prema gorenavedenim naputcima.
+Zadatak 4.: Izradite klasu Valuta prema gorenavedenim naputcima.
+Zadatak 5.: Izradite klasu WebServer prema gorenavedenim naputcima.
+Zadatak 6.: Izradite klasu Printer prema gorenavedenim naputcima.
+Zadatak 7.: Izradite klasu Kuca prema gorenavedenim naputcima.
+Zadatak 8.: Izradite klasu Zivotinja prema gorenavedenim naputcima.
+Zadatak 9.: Izradite klasu Zaposlenik prema gorenavedenim naputcima.
+Zadatak 10.: Izradite klasu Knjiga prema gorenavedenim naputcima.
