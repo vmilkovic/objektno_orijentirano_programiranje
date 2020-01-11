@@ -1,0 +1,31 @@
+Klasa WebStranica
+(I2: 1b) Definirati podatkovne članove adresa i da li je stranica učitana (da ili ne). Ispravno enkapsulirajte podatkovne članove.
+(I1: 3b) Adresu definirajte kao strukturu koja se sastoji od URL-a i porta, npr: www.google.com i 80. Strukturu deklarirajte u istoj header datoteci kao i WebStranicu.
+(I2: 2b) Definirajte i implementirajte gettere i settere za podatkovne članove. Setteri ne smiju postaviti adresu ukoliko je URL prazan ili port negativan.
+(I2: 1b) Definirajte i implementirajte defaultni konstruktor koji postavlja adresu web stranice na www.vub.hr i port 80 te da stranica nije učitana.
+(I2: 2b) Definirajte i implementirajte konstruktor koji će imati dva parametra: URL i port. Parametar port mora imati definiranu pretpostavljenu vrijednost za port: 80. Svaka stranica izrađena pomoću ovog konstruktora na početku nije učitana.
+(I2: 2b) Implementirajte operator ==. Dvije web stranice su jednake ako su isti URL i port.
+(I1: 3b) Implementirajte metodu info koja prikazuje web stranicu u obliku: www.vub.hr:80 (ucitano) ili www.vlada.hr:80 (nije ucitano)
+Koristite:
+	(I2: 1b) inicijalizaciju listu u jednom konstruktoru,
+	(I2: 1b) delegiranje konstruktora u jednom konstruktoru.
+	(I1: 3b) VUB-ov standard pisanja C++ koda.
+
+Klassa WebPreglednik
+(I2: 1b) Definirati sve podatkovne članove za klasu WebPreglednik kako bi se pohranile informacije: ime preglednika, otvorena stranica (WebStranica). Ispravno enkapsulirajte podatkovne članove.
+(I2: 1b) WebPreglednik može, a ne mora imati otvorenu incognito (privatnu) web stranicu.
+(I2: 2b) Definirajte i implementirajte konstruktor koji postavlja ime preglednika i URL koji će biti otvoren: npr. WebPreglednik preglednik("Firefox", "www.vub.hr");
+(I2: 2b) Definirajte i implementirajte konstruktor koji postavlja ime preglednika i URL koji će biti otvoren, te url koji će biti otvoren u incognitu: npr. WebPreglednik preglednik("Firefox", "www.vub.hr", "www.deepweb.com");.
+(I2: 2b) Definirajte i implementirajte destruktor koji će se pobrinuti da obriše incognito stranicu (ukoliko ona postoji).
+(I2: 2b) Definirajte settere za obje stranice. Setter neće postaviti stranicu ukoliko stranica nije na portu 80.
+(I2: 3b) Definirajte i implementirajte copy konstruktor koji obavlja deep copy. Ukoliko preglednik ima otvorenu incognito stranicu, i novi web preglednik mora imati otvorenu incognito stranicu, ali s URL-om www.google.com.
+(I2: 3b) Definirajte operator =. Operator će incognito web stranicu postaviti na nul pokazivač bez obzira da li objekt s desne strane operatora pridruživanja ima otvorenu incognito stranicu.
+(I1: 3b) Definirajte i implementirajte metodu koja vraća referencu na incognito stranicu. Ukoliko nije postavljena, vratiti referencu na običnu stranicu.
+(I1: 3b, I2: 2b) Implementirajte metodu info koja prikazuje podatke u sljedećem obliku:
+	Ime preglednika
+	Stranica: www.vub.hr:80 (nije ucitano)
+	Incognito: www.deepweb.com:80 (nije ucitano)
+	ili ako incognito stranica nije otvorena:
+	Ime preglednika
+	Stranica: www.vub.hr:80 (nije ucitano)
+	Incognito: nije otvoren
